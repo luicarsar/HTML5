@@ -54,12 +54,12 @@ padding: 5px 0 8px 10px;
       background-color: rgb(97, 93, 93);
       border-radius: 10px;
       box-shadow:rgb(97, 93, 93) 5px 5px 10px;
--webkit-transition: webkit-transform 3s ease-in-out 0.5s;
+      transition: webkit-transform 3s ease-in-out 0.5s;
 
    }
 
    figure img:hover{
-    -webkit-transform: scale(1.2);
+   transform: scale(1.2);
 
    }
 
