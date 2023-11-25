@@ -12,11 +12,15 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable,
    q:before, q:after { content:''; }
 
    /*fin del reset css*/
+body{
+    font-size: 62.5%;
+}
+
 
    h1 {
     font: normal 2em Verdana,Geneva,sans-serif;
     background: -webkit-linear-gradient(top,#00F,#0CF);
-    width: 55%;
+    width: 35%;
     border-radius: 10px;
     margin: 25px auto;
     text-align: center;
@@ -25,3 +29,52 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable,
     box-shadow:#00f  5px 5px 10px;
     text-shadow: white 3px 3px 5px;
    }
+
+
+   h2{
+    font: bold 1.6em Verdana,Geneva,sans-serif;
+padding: 5px 0 8px 10px;
+
+   }
+
+   section{
+    width: 91%;
+    border-top:2px dashed rgb(221, 6, 20) ;
+    margin:15px auto;
+
+   }
+
+   figure{
+    float: left;
+
+   }
+
+   figure img{
+      padding: 3px;
+      background-color: rgb(97, 93, 93);
+      border-radius: 10px;
+      box-shadow:rgb(97, 93, 93) 5px 5px 10px;
+-webkit-transition: webkit-transform 3s ease-in-out 0.5s;
+
+   }
+
+   figure img:hover{
+    -webkit-transform: scale(1.2);
+
+   }
+
+   figcaption{
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.2em;
+text-align: center;
+   }
+footer{
+    clear:both
+    }
+
+footer p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.2em;
+margin-top: 400px;
+margin-left: 20px;
+}
