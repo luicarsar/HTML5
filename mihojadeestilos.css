@@ -14,7 +14,9 @@
     margin-left: 200px;
     padding-left: 15px;
     padding-top: 15px;
-
+#imagen:hover{
+  transform: scale(1.2);
+}
   }
 #pieprincipal {
     background-color: rgb(178, 172, 12);
