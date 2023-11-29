@@ -13,6 +13,8 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable,
 
    /*fin del reset css*/
    figure img{
+    clear: both;
+    float:right;
     padding: 3px;
     background-color: rgb(97, 93, 93);
     border-radius: 10px;
@@ -21,4 +23,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable,
 
 figure img:hover {
     transform: scale(1.2);
+}
+
+h1 {
+  clear: both;
+  text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight:bold;
 }
