@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+<script>
+
+
+var imagenes = document.getElementsByTagName("img");
+
+var flores = document.getElementById(flores);
+
+window.onload = function(){
+
+  
+
+    for (var i = 0; i < imagenes.length; i++) {
+
+	
+    imagenes[i].addEventListener("mouseover",crece,false);
+
+    imagenes[i].addEventListener("mouseout",mengua,false);
+
+    imagenes[i].addEventListener("click",tipoflor,false);
+
+    }
+
+
+    for (var i=0; i<flores.length; i++) {
+
+        return tipoflor;
+
+    }
+
+    }
+
+function tipoflor(){
+
+    alert(this.id);
+
+}
+
+function crece(){
+
+   this.width = 225;
+
+   this.height = 225;
+
+}
+
+function  mengua(){
+
+   this.width = 200;
+
+   this.height = 200;
+
+}
+
+</script>
+</head>
+<body>
+ <p><img id= "Flores de corte" src="JSCRIPT/imagenes/1.jpg"/>&nbsp;&nbsp;
+ <img id= "Flor de Mirabilis Jalapa" src="JSCRIPT/imagenes/2.jpg"/>&nbsp;&nbsp;
+ <img  id= "Strelitzia. Flores de las aves" src="JSCRIPT/imagenes/3.jpg"/>&nbsp;&nbsp;
+ <img id="Flor del opio" src="JSCRIPT/imagenes/4.jpg"/></p>
+ </body>
+ 
+</html>
