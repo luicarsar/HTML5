@@ -4,41 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-var imagen;
+   
+   <script>
+var imagen=document.getElementsByTagName("img");
 
-      function tipoflor() {
-        alert("Pensamientos");
-      }
 
-      function manejaflor() {
+
+window.onload = function(){      
         
-        for(var i=0;i<3;i++){
-        imagen = document.getElementsByTagName("img")[i];}
-
-        imagen.addEventListener("mouseover",crecer,false);
-        imagen.addEventListener("click",tipoflor,false);
-        imagen.addEventListener("mouseout",menguar,false);
-
-
+        for(var i=0;i< imagen.length; i++){
+       
+        imagen[i].addEventListener("mouseover",crece,false);
+        imagen[i].addEventListener("mouseout",mengua,false);
+        imagen[i].addEventListener("click",tipoflor,false);
       }
 
-      function crecer() {
-        imagen.width = 225;
-        imagen.height = 225;
+    } 
+      function tipoflor() {
+        alert(this.id);
       }
 
-      function menguar() {
-        imagen.width = 200;
-        imagen.height = 200;
+
+      function crece() {
+        this.width = 225;
+        this.height = 225;
       }
 
-      window.onload = manejaflor;
-      
+      function mengua() {
+        this.width = 200;
+        this.height = 200;
+      }
+
+         
     </script>
   </head>
   <body>
-    <p><img src="JSCRIPT/imagenes/1.jpg"/><br><img src="JSCRIPT/imagenes/2.jpg"/><br><img src="JSCRIPT/imagenes/3.jpg"/><br><img src="JSCRIPT/imagenes/4.jpg"/></p>
+    <p><img id= "Flores de corte" src="JSCRIPT/imagenes/1.jpg"/>&nbsp;&nbsp;
+    <img id= "Flor de Mirabilis Jalapa" src="JSCRIPT/imagenes/2.jpg"/>&nbsp;&nbsp;
+    <img id= "Strelitzia. Flores de las aves" src="JSCRIPT/imagenes/3.jpg"/>&nbsp;&nbsp;
+    <img id="Flor del opio" src="JSCRIPT/imagenes/4.jpg"/></p>
    
 
 
